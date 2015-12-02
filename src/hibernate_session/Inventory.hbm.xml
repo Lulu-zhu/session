@@ -3,13 +3,12 @@
 	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping> 
-	<class name ="hibernate_session.User" >
-	<id name = "id">
-	<generator class="uuid"/>
+	<class name ="hibernate_session.Inventory" table = "t_Inventory">
+	<id name = "itemNO">
+	<generator class="native"/>
 	</id>
-	<property name="name"/>
-	<property name="password"/>
-	<property name="createTime"/>
-	<property name="expireTime"/>
+	<property name="itemName"/>
+	<property name="quantity"/>
+
 	</class>
 </hibernate-mapping>
